@@ -582,6 +582,14 @@ impl<T: EventListener, A: ActionContext<T>> Processor<T, A> {
                 } else {
                     self.ctx.start_selection(SelectionType::Simple, point, side);
                 }
+
+                // If the config option is true and the shift key isn't held,
+                // don't launch URLs
+                if self.ctx.config().hints.shift_click_open
+                    && !self.ctx.modifiers().shift() {
+
+                    self.ctx.mouse_mut().block_hint_launcher = true;
+                }
             },
             ClickState::DoubleClick => {
                 self.ctx.mouse_mut().block_hint_launcher = true;

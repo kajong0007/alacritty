@@ -227,6 +227,9 @@ pub struct Hints {
     /// Characters for the hint labels.
     alphabet: HintsAlphabet,
 
+    /// Use shift+click to open URLs
+    pub shift_click_open: bool,
+
     /// All configured terminal hints.
     pub enabled: Vec<Hint>,
 }
@@ -260,6 +263,7 @@ impl Default for Hints {
                 }),
             }],
             alphabet: Default::default(),
+            shift_click_open: false,
         }
     }
 }

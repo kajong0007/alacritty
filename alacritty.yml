@@ -475,6 +475,9 @@
   # Keys used for the hint labels.
   #alphabet: "jfkdls;ahgurieowpq"
 
+  # Use shift+click to open URLs
+  #shift_click_open: false
+
   # List with all available hints
   #
   # Each hint must have a `regex` and either an `action` or a `command` field.
