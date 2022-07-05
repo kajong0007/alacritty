@@ -22,6 +22,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Vi mode keybinding (z) to center view around vi mode cursor
 - Accept hexadecimal values starting with `0x` for `--embed`
 - Config option `cursor.blink_timeout` to timeout cursor blinking after inactivity
+- Config option `hints.shift_click_open` allows the user to change the behavior of left clicking to open a URL to shift+click to open a URL
 
 ### Changed
 
